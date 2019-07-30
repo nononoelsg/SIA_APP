@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gLK-dh-QXv">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Safety-->
+        <scene sceneID="NTL-Fo-81v">
+            <objects>
+                <viewController id="J7O-Pw-ebb" customClass="SafetyViewController" customModule="SIA_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yF4-Ke-8xI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-aq-W2b">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ozK-aq-W2b" firstAttribute="top" secondItem="ZZj-gd-NRH" secondAttribute="top" id="BgG-ra-si4"/>
+                            <constraint firstItem="ozK-aq-W2b" firstAttribute="leading" secondItem="ZZj-gd-NRH" secondAttribute="leading" id="DEB-sK-GsR"/>
+                            <constraint firstItem="ZZj-gd-NRH" firstAttribute="bottom" secondItem="ozK-aq-W2b" secondAttribute="bottom" id="WVL-aY-kZY"/>
+                            <constraint firstItem="ZZj-gd-NRH" firstAttribute="trailing" secondItem="ozK-aq-W2b" secondAttribute="trailing" id="rcj-hI-ogv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZZj-gd-NRH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Safety" image="icons8-exit-sign-100" selectedImage="icons8-exit-sign-100" id="BBh-jZ-CBJ"/>
+                    <connections>
+                        <outlet property="sceneView" destination="ozK-aq-W2b" id="vQo-y7-kKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1d-M4-1XC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="317"/>
+        </scene>
+        <!--Aircraft-->
+        <scene sceneID="ZgF-r7-ltP">
+            <objects>
+                <viewController id="4MD-8i-bF5" customClass="AircraftCollectionView" customModule="SIA_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wHv-9P-nHD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="K9s-8t-h6t">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Me5-Q2-xZ2">
+                                    <size key="itemSize" width="412" height="185"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gst-jE-jDF" customClass="CollectionViewCell" customModule="SIA_APP" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="412" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="412" height="185"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="G5i-l2-JOB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="412" height="185"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="G5i-l2-JOB" secondAttribute="bottom" id="TL8-y0-r0I"/>
+                                            <constraint firstItem="G5i-l2-JOB" firstAttribute="top" secondItem="gst-jE-jDF" secondAttribute="top" id="cGO-35-o0O"/>
+                                            <constraint firstAttribute="trailing" secondItem="G5i-l2-JOB" secondAttribute="trailing" id="nw1-Cs-NBv"/>
+                                            <constraint firstItem="G5i-l2-JOB" firstAttribute="leading" secondItem="gst-jE-jDF" secondAttribute="leading" id="yvs-eC-cqg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="AircraftImage" destination="G5i-l2-JOB" id="O2U-se-Ztx"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q5W-NC-IUc" firstAttribute="bottom" secondItem="K9s-8t-h6t" secondAttribute="bottom" id="Dig-B1-qqU"/>
+                            <constraint firstItem="q5W-NC-IUc" firstAttribute="trailing" secondItem="K9s-8t-h6t" secondAttribute="trailing" id="RN3-hW-i6l"/>
+                            <constraint firstItem="K9s-8t-h6t" firstAttribute="top" secondItem="q5W-NC-IUc" secondAttribute="top" id="ece-eV-0dw"/>
+                            <constraint firstItem="K9s-8t-h6t" firstAttribute="leading" secondItem="q5W-NC-IUc" secondAttribute="leading" id="f59-8y-XHF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q5W-NC-IUc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Aircraft" image="icons8-airplane-100" selectedImage="icons8-airplane-100" id="nI0-sh-Wuj"/>
+                    <connections>
+                        <outlet property="collectionView" destination="K9s-8t-h6t" id="XcH-7u-ojB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bm0-XL-u5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62.318840579710148" y="-331.47321428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ewd-EJ-wsM">
+            <objects>
+                <tabBarController id="gLK-dh-QXv" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BJI-6s-9M6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4MD-8i-bF5" kind="relationship" relationship="viewControllers" id="sOi-cn-xEa"/>
+                        <segue destination="J7O-Pw-ebb" kind="relationship" relationship="viewControllers" id="ySc-C6-XyJ"/>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="viewControllers" id="Ocu-Ot-juR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTj-yx-myo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-980" y="-7"/>
+        </scene>
+        <!--Food-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SIA_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Food" image="icons8-food-100" selectedImage="icons8-food-100" id="VRM-vi-NKp"/>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="-990"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1408" height="714"/>
+        <image name="icons8-airplane-100" width="50" height="50"/>
+        <image name="icons8-exit-sign-100" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icons8-food-100" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
+</document>
