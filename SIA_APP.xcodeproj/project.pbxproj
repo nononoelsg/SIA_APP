@@ -16,6 +16,8 @@
 		CE877F5822E83A6900136446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE877F5722E83A6900136446 /* Assets.xcassets */; };
 		CE877F5B22E83A6900136446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE877F5922E83A6900136446 /* LaunchScreen.storyboard */; };
 		CEBCC53922F017A90032CA03 /* AircraftCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCC53822F017A90032CA03 /* AircraftCollectionView.swift */; };
+		EC55473922FD27250053A511 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = EC55473822FD27250053A511 /* Assets */; };
+		EC55473B22FD283C0053A511 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55473A22FD283C0053A511 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE877F5A22E83A6900136446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE877F5C22E83A6A00136446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBCC53822F017A90032CA03 /* AircraftCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftCollectionView.swift; sourceTree = "<group>"; };
+		EC55473822FD27250053A511 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		EC55473A22FD283C0053A511 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CE877F4E22E83A3700136446 /* AppDelegate.swift */,
+				EC55473822FD27250053A511 /* Assets */,
 				CE877F5022E83A3800136446 /* art.scnassets */,
 				CE877F5222E83A3800136446 /* ViewController.swift */,
 				CE51789522EA97D20063D965 /* SafetyViewController.swift */,
@@ -72,6 +77,7 @@
 				CE877F5922E83A6900136446 /* LaunchScreen.storyboard */,
 				CE877F5C22E83A6A00136446 /* Info.plist */,
 				CE51789322EA978C0063D965 /* SafetyVideo.mp4 */,
+				EC55473A22FD283C0053A511 /* ItemCell.swift */,
 			);
 			path = SIA_APP;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE877F5122E83A3800136446 /* art.scnassets in Resources */,
+				EC55473922FD27250053A511 /* Assets in Resources */,
 				CE877F5B22E83A6900136446 /* LaunchScreen.storyboard in Resources */,
 				CE877F5822E83A6900136446 /* Assets.xcassets in Resources */,
 				CE877F5622E83A3800136446 /* Main.storyboard in Resources */,
@@ -153,6 +160,7 @@
 				CE877F5322E83A3800136446 /* ViewController.swift in Sources */,
 				CEBCC53922F017A90032CA03 /* AircraftCollectionView.swift in Sources */,
 				CE877F4F22E83A3700136446 /* AppDelegate.swift in Sources */,
+				EC55473B22FD283C0053A511 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +307,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NCLK8CH2RT;
+				DEVELOPMENT_TEAM = EW6ZRPD5MA;
 				INFOPLIST_FILE = SIA_APP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spellworks.SIA-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spellworks.SIA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,14 +326,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NCLK8CH2RT;
+				DEVELOPMENT_TEAM = EW6ZRPD5MA;
 				INFOPLIST_FILE = SIA_APP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spellworks.SIA-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spellworks.SIA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
