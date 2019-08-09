@@ -164,8 +164,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="U0K-SW-4ec" id="RBi-Ct-Ypi"/>
-                                    <outlet property="delegate" destination="U0K-SW-4ec" id="x3f-ya-jAO"/>
+                                    <outlet property="dataSource" destination="BV1-FR-VrT" id="TgX-vR-n93"/>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="M99-mc-TGJ"/>
                                 </connections>
                             </collectionView>
                         </subviews>
