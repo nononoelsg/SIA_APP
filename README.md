@@ -21,7 +21,6 @@ This project is licensed under the MIT License
 Images 3D models from https://3dwarehouse.sketchup.com
 -  [SIA Plane Model]
 https://3dwarehouse.sketchup.com/model/d3e9ad968ae1b29a22df1994a149e700/Singapore-Airlines-Plane?hl=en
+
 Images of SIA services and products
-- https://developer.singaporeair.com/
-Video of SIA safety video
 - https://developer.singaporeair.com/
