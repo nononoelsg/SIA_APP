@@ -1,6 +1,8 @@
 # SIA_APP
 SIA app challenge 2019
 
+![Screenshot 2020-09-30 at 3 45 35 PM](https://user-images.githubusercontent.com/47032701/94657419-014df100-0334-11eb-9a19-7f654094501c.png)
+
 ## Requirements
 1) Install Xcode 10.x or above and the target iOS version to be iOS 12 and above
 2) change the bundle identifer to your own identifer
